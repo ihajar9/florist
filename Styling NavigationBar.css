@@ -77,3 +77,250 @@ nav li a:hover{
     font-weight: 700;
     font-size: 15px;
 }
+
+/* Shop Page */
+
+
+
+
+
+
+
+/* About Page */
+*about {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Roboto',sans-serif;
+}
+body {
+   background-color: pink;
+}
+
+.heading{
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   margin: 20px auto;
+}
+
+.heading h1{
+   font-size: 50px;
+   color: #fff;
+   margin-bottom: 25px;
+   position: relative;
+}
+.heading h1::after{
+   content:"";
+   position: absolute;
+   width: 100%;
+   height: 4px;
+   display: block;
+   margin:0 auto;
+   background-color: plum;
+}
+.heading p {
+   font-size: 18px;
+   color: palevioletred;
+   margin-bottom: 35px;
+}
+.container{
+   width: 90%;
+   margin:0 auto;
+   padding:10px 20px;
+}
+.about{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.about-image{
+   flex:1;
+   margin-right: 40px;
+   overflow: hidden;
+}
+.about-image img{
+   max-width: 100%;
+   height: auto;
+   display: block;
+   transition: 0.5s ease;
+}
+.about-image:hover img{
+   transform:scale(1.2);
+}
+.about-content{
+   flex:1;
+}
+.about-content h2{
+   font-size: 23px;
+   margin-bottom: 15px;
+   color: hotpink;
+}
+.about-content p{
+   font-size: 18px;
+   line-height: 1.5;
+   color: thistle;
+}
+.about-content .read-more{
+   display: inline-block;
+   padding: 10px 20px;
+   color: #fff;
+   font-size: 19px;
+   text-decoration: none;
+   border-radius: 25px;
+   margin-top: 15px;
+   transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+   background-color: pink;
+}
+@media screen and (max-width: 768px){
+   .heading{
+      padding: 0px 20px;
+   }
+   .heading h1{
+      font-size: 36px;
+   }
+   .heading p{
+      font-size: 17px;
+      margin-bottom: 0px;
+   }
+   .container{
+      padding: 20px;
+      flex-direction: column;
+   }
+   .about-image{
+      margin-right: 0px;
+      margin-bottom: 16px;
+   }
+   .about-content p{
+      padding: 0px;
+      font-size: 16px;
+   }
+   .about-content .read-more{
+      font-size: 16px;
+   }
+}
+
+
+
+
+
+/* Login Page */
+*login {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(assets/img/pinkba.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+ .wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+ }
+
+ .wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+ }
+
+ .wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+ }
+
+ .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid palevioletred(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color:#fff
+ }
+ .input-box input::placeholder {
+    color: #fff;
+ }
+
+ .input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+ }
+
+ .wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+ }
+
+ .remember-forgot label input {
+    accent-color:#fff;
+    margin-right: 3px;
+ }
+
+ .remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .remember-forgot a:hover {
+    text-decoration: underline;
+ }
+
+ .wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px cornsilk(0,0,0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: beige;
+    font-weight: 600;
+ }
+
+ .wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+ }
+
+ .register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+ .register-link p a:hover {
+    text-decoration: underline;
+ }
